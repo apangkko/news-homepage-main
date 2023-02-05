@@ -194,11 +194,11 @@ main {
     color: var(--clr-orange);
 }
 
-.new_section > div {
+.new_section > article {
     padding-top: 1rem;
 }
 
-.new_section > div:not(:last-child) {
+.new_section > article:not(:last-child) {
     padding-bottom: 2rem;
     border-bottom: 1px solid var(--clr-gray400);
 }
@@ -209,13 +209,13 @@ main {
     gap: 2rem;
 }
 
-.feature_section > div {
+.feature_section > article {
     display: grid;
     grid-template-columns: 100px 1fr;
     gap: 1.5rem;
 }
 
-.feature_section > div > div {
+.feature_section > article > div {
     display: grid;
 }
 
@@ -236,6 +236,10 @@ main {
 }
 
 @media only screen and (min-width: 1000px) {
+
+    header {
+        margin-bottom: 3rem;
+    }
 
     #logo {
         width: 65px;
@@ -288,13 +292,9 @@ main {
     .hero_section > div {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 3rem;
+        gap: 2rem;
     }
 
-    .hero_section > div > div {
-        display: grid;
-        justify-items: start;
-    }
 
     .btn {
         align-self: end;
